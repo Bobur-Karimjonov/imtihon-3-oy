@@ -1,0 +1,75 @@
+.control{
+  padding: 240px 0;
+  background-image: url(../../images/runner.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: center;
+}
+.control__info {
+  width: 490px;
+  margin-left: auto;
+}
+.control__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.control__text {
+  position: relative;
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+
+  &::before{
+    position: absolute;
+    content: "";
+    left: -95px;
+    top: 57px;
+    width: 120px;
+    border: 2px solid #888888;
+    transform: rotate(90deg);
+  }
+}
+.control__link{
+  display: inline-block;
+  background: #EA625C;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 38px;
+}
+
+@media only screen and(max-width:568px){
+  .control{
+    padding: 0 0 0 106px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .control__info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // padding: 96px 0;
+    margin-left: auto;
+    margin-right: auto;
+    // text-align: center;
+    // align-items: center;
+  }
+  .control__title{
+    font-size: 46px;
+  }
+  .control__link{
+    display: block;
+  }
+}
